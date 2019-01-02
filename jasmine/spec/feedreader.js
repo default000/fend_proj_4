@@ -94,9 +94,7 @@ $(function() {
          * a single .entry element within the .feed container.
          */
          beforeEach(function(done) {
-            loadFeed(0, function() {
-                done();
-            });
+            loadFeed(0, done);
          });
 
          /* Make sure there is an .entry within our .feed */
