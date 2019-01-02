@@ -84,7 +84,6 @@ $(function() {
             button.click();
             expect(body.classList.contains('menu-hidden')).toBe(true);
           });
-
     });
 
     describe('Initial Entries', function() {
@@ -101,7 +100,6 @@ $(function() {
          it('.feed contains .entry',function() {
             expect(document.querySelector('.feed').firstElementChild.firstElementChild.classList.contains('entry')).toBe(true);
          });
-
      });
 
     describe('New Feed Selection', function() {
