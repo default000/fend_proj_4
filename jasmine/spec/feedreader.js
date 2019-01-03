@@ -125,7 +125,7 @@ $(function() {
             let feed2 = document.querySelector('.feed').firstElementChild.textContent;
             expect(feed).toBeDefined();
             expect(feed2).toBeDefined();
-            expect(feed != feed2).toBe(true);
+            expect(feed).not.toEqual(feed2);
          });
      });
 }());
