@@ -110,10 +110,9 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          */
          beforeAll(function(done) {
-            loadFeed(0);
-            feed = document.querySelector('.feed').firstElementChild.textContent;
-            loadFeed(1, function() {
-                done();
+            loadFeed(0, function() {
+                feed = document.querySelector('.feed').firstElementChild.textContent;
+                loadFeed(1, done);
             });
          });
 
