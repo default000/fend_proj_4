@@ -98,7 +98,7 @@ $(function() {
 
          /* Make sure there is an .entry within our .feed */
          it('.feed contains .entry',function() {
-            expect(document.querySelector('.feed').firstElementChild.firstElementChild.classList.contains('entry')).toBe(true);
+            expect(document.querySelectorAll('.feed .entry').length).toBeGreaterThan(0);
          });
      });
 
